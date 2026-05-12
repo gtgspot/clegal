@@ -10,7 +10,7 @@
       "type": "http",
       "url": "https://mcp.patentclient.com/mcp",
       "title": "Patent Client Agents",
-      "description": "USPTO and EPO patent data — application status, prosecution history, office actions, PTAB decisions, assignments, fulltext, MPEP, CPC."
+      "description": "USPTO and EPO patent + trademark data — application status, prosecution history, office actions, PTAB decisions, patent and trademark assignments, TSDR trademark status and deadlines, fulltext, MPEP, TMEP, CPC."
     },
     "CourtListener": {
       "type": "http",
