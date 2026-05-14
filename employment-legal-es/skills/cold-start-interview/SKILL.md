@@ -28,13 +28,16 @@ Record: `[role]`
 Ask: **What is your current situation?**
 
 Options:
-- `baja IT` = on sick leave (IT)
-- `IPT pendiente` = awaiting IPT/IPA ruling (ICAM or court)
+- `baja IT` = on sick leave (IT), no IPT/IPA filed yet
+- `IPT pendiente` = awaiting IPT ruling (ICAM or court) — unable to do habitual profession
+- `IPA pendiente` = awaiting IPA ruling — unable to do ANY profession (multi-system, severe)
 - `IPT declarada` = already ruled IPT/IPA
 - `plan pensiones` = occupational pension inquiry
 - `revolving` = revolving credit usury claim
 - `contingencia` = common→professional contingency procedure
 - Other: describe briefly
+
+If user says "IPT pendiente" AND has multi-system diagnoses (neurological + urological + psychiatric + chronic pain), proactively note: "Given your diagnoses, IPA may be the more appropriate target — do you want to explore that?"
 
 Record: `[situation]`
 
@@ -54,7 +57,7 @@ Ask: **When did your situation start?**
 
 Record: `[date]`
 
-### Step 5: Diagnoses / Details
+### Step 5: Diagnoses / Details + Base Reguladora
 
 Ask: **Main diagnoses (CIE-10 if available) or issue description?**
 
@@ -64,6 +67,14 @@ Examples:
 - "Revolving card Visa & Go, TAE 22,42%, saldo 5.186€"
 
 Record: `[diagnoses_or_issue]`
+
+If situation is IT / IPT / IPA / contingencia, also ask:
+
+**¿Cuál es tu salario neto mensual de referencia antes de la baja?** (Base reguladora para calcular pensión estimada.)
+
+Example: "1.830 €/mes neto IT delegada TMB"
+
+Record: `[base_reguladora]` (used by ipt-analysis and contingencia-cambio for economic impact table)
 
 ### Step 6: Phase
 
@@ -91,9 +102,12 @@ Append under "### User Profile" section:
 
 - **Role:** [role] ([trabajador/abogado/asesor])
 - **Situation:** [situation]
+- **Objective grade:** [IPT / IPA / GI — infer from diagnoses if multi-system]
 - **Company:** [company, if applicable; else "N/A"]
 - **Start Date:** [date]
+- **Day count:** [days from start date to today]
 - **Diagnoses/Issue:** [diagnoses_or_issue]
+- **Base reguladora:** [base_reguladora — monthly net salary reference, or "N/A"]
 - **Phase:** [phase]
 
 **Available Skills for your situation:**

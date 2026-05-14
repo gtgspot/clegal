@@ -33,9 +33,15 @@ Four grades under LGSS Art. 194-200:
 
 ## Workflow
 
+### Step 0: Load Profile
+
+Read `~/.claude/plugins/config/claude-for-legal/employment-legal-es/CLAUDE.md`.
+Extract: `[base_reguladora]`, `[situation]`, `[objective_grade]`, `[diagnoses_or_issue]`, `[company]`, `[date]`.
+If profile exists, skip questions already answered — only ask for missing data.
+
 ### Step 1: Collect Medical Evidence
 
-Ask user:
+Ask user (skip if already in profile):
 - **Diagnoses (CIE-10)?** (e.g., "G83.4 spinal cord lesion, R15.9 fecal incontinence, G89.28 chronic pain post-procedure")
 - **Date of onset?** (important for prognosis, chronicity)
 - **Is prognosis stable or progressive?**
@@ -106,6 +112,18 @@ Add subsection:
 - [ ] Prior ICAM/court rulings (if applicable)
 - [ ] Psychological evaluation (if depression/anxiety present)
 - [ ] Testimony from employer re: job demands
+
+### Step 6b: Economic Impact Table (use base_reguladora from profile)
+
+If `[base_reguladora]` is available, compute:
+
+| Escenario | Base reguladora | % pensión | Pensión mensual | Recargo Art.164 | Total mensual | Valor 30 años |
+|---|---|---|---|---|---|---|
+| Contingencia común IPT | [base] | 55% | [calc] | 0% | [calc] | [calc] |
+| Contingencia profesional IPT | [base] | 75% | [calc] | +30% | [calc] | [calc] |
+| Contingencia profesional IPA | [base] | 100% | [calc] | +30% | [calc] | [calc] |
+
+Note: percentages are reference rates — actual rate depends on contribution years and INSS resolution. Tag: `[verificar INSS — bases cotización reales]`
 
 ### Step 7: Output
 
