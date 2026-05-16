@@ -312,7 +312,8 @@ Per the decision posture in `~/.claude/plugins/config/claude-for-legal/ip-legal/
 
 When "classes" or "Nice classes" are mentioned, this refers to an international classification
 scheme called the Nice Classification. If more information is needed on what specific classes
-include or exclude, consult the official class headings in `~/.claude/plugins/config/claude-for-legal/ip-legal/skills/clearance/references/20260101-en-classheadings.pdf`.
+include or exclude, consult the official class headings in
+`references/ip-legal-clearance-trademark-class-headings-20260101.md` in the plugin root.
 
 ---
 
