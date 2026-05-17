@@ -1,9 +1,11 @@
 # CLAUDE.md
 
-Guidance for working on this repo. `claude-for-legal` is a Claude Code plugin
-marketplace — twelve first-party legal plugins, one vendor plugin, and five
-managed-agent cookbooks. Most work here is editing prompt content (skills,
-agents, hooks), plugin metadata, or cookbook config — not application code.
+## Fork-specific objective
+
+This fork adapts `claude-for-legal` for South African legal workflows and later SaaS integration.
+Preserve upstream marketplace and plugin conventions unless a fork-specific change is explicitly required.
+Prefer additive South African overlays to destructive rewrites.
+Do not remove or invalidate upstream validation assumptions without confirming the replacement path.
 
 ## Layout
 
