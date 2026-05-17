@@ -1,0 +1,125 @@
+statute: "Labour Relations Act 66 of 1995"
+authority: "Department of Employment and Labour"
+last_confirmed: "2025-03-01"
+source_url: "https://www.labour.gov.za/DocumentCenter/Pages/Acts.aspx"
+
+sections:
+  fair_dismissal:
+    ref: "LRA s188(1)"
+    value: "substantive and procedural fairness required"
+    effective_from: null
+    effective_until: null
+    effect: "A dismissal is unfair if the employer fails to prove that the reason for dismissal is a fair reason related to conduct, capacity, or operational requirements, and that a fair procedure was followed. South Africa does not recognise at-will employment."
+
+  automatically_unfair_dismissal:
+    ref: "LRA s187(1)"
+    value: "listed grounds render dismissal automatically unfair"
+    effective_from: null
+    effective_until: null
+    effect: "A dismissal is automatically unfair if the reason is one of the listed grounds in s187(1), including participation in lawful strike action, pregnancy, or exercise of a right conferred by the Act. The maximum compensation remedy is 24 months' remuneration."
+
+  auto_unfair_discrimination:
+    ref: "LRA s187(1)(f)"
+    value: "unfair discrimination on listed or analogous grounds"
+    effective_from: null
+    effective_until: null
+    effect: "A dismissal is automatically unfair if the reason is that the employer unfairly discriminated against the employee on any arbitrary ground, including but not limited to race, gender, sex, ethnic or social origin, colour, sexual orientation, age, disability, religion, conscience, belief, political opinion, culture, language, marital status, or family responsibility."
+
+  protected_disclosure:
+    ref: "LRA s187(1)(h) + Protected Disclosures Act 26 of 2000"
+    value: "dismissal for protected disclosure is automatically unfair"
+    effective_from: null
+    effective_until: null
+    effect: "A dismissal is automatically unfair if the reason is that the employee made a protected disclosure as defined in the Protected Disclosures Act 26 of 2000. Whistleblowers are protected from occupational detriment including dismissal."
+
+  ccma_referral_unfair_dismissal:
+    ref: "LRA s191(1)"
+    value: 30
+    unit: "days"
+    effective_from: null
+    effective_until: null
+    effect: "An employee who alleges unfair dismissal must refer the dispute to the CCMA or a bargaining council within 30 days of the date of dismissal, or within 30 days of the employer making a final decision to dismiss."
+
+  ccma_conciliation_period:
+    ref: "LRA s191(5)"
+    value: 30
+    unit: "days"
+    effective_from: null
+    effective_until: null
+    effect: "The commissioner must attempt to resolve the dispute through conciliation within 30 days of the date the CCMA or council received the referral."
+
+  ccma_arbitration_after_conciliation:
+    ref: "LRA s191(5)(a)"
+    value: 90
+    unit: "days"
+    effective_from: null
+    effective_until: null
+    effect: "If the dispute remains unresolved after conciliation, the employee may refer it to arbitration within 90 days of the date on which the certificate of non-resolution was issued."
+
+  compensation_cap_unfair_dismissal:
+    ref: "LRA s194(1)"
+    value: 12
+    unit: "months' remuneration"
+    effective_from: null
+    effective_until: null
+    effect: "The compensation awarded for an ordinary unfair dismissal must be just and equitable in all the circumstances, but may not exceed the equivalent of 12 months' remuneration."
+
+  compensation_cap_auto_unfair:
+    ref: "LRA s194(3)"
+    value: 24
+    unit: "months' remuneration"
+    effective_from: null
+    effective_until: null
+    effect: "The compensation awarded for an automatically unfair dismissal must be just and equitable in all the circumstances, but may not exceed the equivalent of 24 months' remuneration."
+
+  retrenchment_consultation:
+    ref: "LRA s189(1)"
+    value: "consultation required before retrenchment"
+    effective_from: null
+    effective_until: null
+    effect: "When an employer contemplates dismissing one or more employees for operational requirements, the employer must consult the relevant parties and disclose all relevant information, including the reasons for the proposed dismissals, alternatives considered, and selection criteria."
+
+  large_scale_retrenchment_threshold:
+    ref: "LRA s189A(1)"
+    value: 50
+    unit: "employees"
+    effective_from: null
+    effective_until: null
+    effect: "Section 189A applies when an employer employs more than 50 employees and contemplates retrenching a specified number of employees based on the size of the workforce, triggering additional procedural requirements including CCMA-facilitated consultation."
+
+  large_scale_retrenchment_facilitation:
+    ref: "LRA s189A(3)"
+    value: 60
+    unit: "days minimum facilitation period"
+    effective_from: null
+    effective_until: null
+    effect: "In a large-scale retrenchment under s189A, the facilitation process must run for at least 60 days from the date on which notice was given, during which the employer may not issue notices of termination."
+
+  probation:
+    ref: "LRA Schedule 8 Item 8"
+    value: "fair procedure required during probation"
+    effective_from: null
+    effective_until: null
+    effect: "An employer may not dismiss a probationary employee without following a fair procedure. The employer must provide the employee with reasonable evaluation, instruction, training, guidance, and counselling, and allow a reasonable opportunity to improve before dismissal for poor performance."
+
+  fixed_term_reasonable_expectation:
+    ref: "LRA s186(1)(b)"
+    value: "non-renewal of fixed-term contract may constitute dismissal"
+    effective_from: null
+    effective_until: null
+    effect: "An employee employed under a fixed-term contract who reasonably expected the employer to renew the contract on the same or similar terms, and the employer fails to do so, is deemed to have been dismissed for purposes of the Act."
+
+  unfair_labour_practice:
+    ref: "LRA s186(2)"
+    value: "listed acts or omissions"
+    effective_from: null
+    effective_until: null
+    effect: "An unfair labour practice means any unfair act or omission that arises between an employer and employee involving unfair conduct relating to promotion, demotion, probation, provision of benefits, training and development, suspension, or failure to reinstate or re-employ a former employee."
+
+  severance_pay:
+    ref: "LRA s41(2)"
+    value: 1
+    unit: "week per completed year of service"
+    effective_from: null
+    effective_until: null
+    effect: "An employee retrenched for operational requirements is entitled to severance pay equal to at least one week's remuneration for each completed year of continuous service with the employer."

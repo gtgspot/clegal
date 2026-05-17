@@ -1,0 +1,49 @@
+statute: "Employment Equity Act 55 of 1998"
+authority: "Department of Employment and Labour"
+last_confirmed: "2025-03-01"
+source_url: "https://www.labour.gov.za/DocumentCenter/Pages/Acts.aspx"
+
+sections:
+  designated_employer_headcount:
+    ref: "EEA s1"
+    value: 50
+    unit: "employees"
+    effective_from: null
+    effective_until: null
+    effect: "An employer who employs 50 or more employees is a designated employer and must comply with the affirmative action provisions of Chapter III of the Act, including the duty to prepare and implement an employment equity plan."
+
+  protected_grounds:
+    ref: "EEA s6(1)"
+    value: "race, gender, sex, pregnancy, marital status, family responsibility, ethnic or social origin, colour, sexual orientation, age, disability, religion, HIV status, conscience, belief, political opinion, culture, language, and birth"
+    effective_from: null
+    effective_until: null
+    effect: "No person may unfairly discriminate, directly or indirectly, against an employee in any employment policy or practice on one or more of the listed grounds."
+
+  ee_plan_requirement:
+    ref: "EEA s20(1)"
+    value: "designated employer must prepare employment equity plan"
+    effective_from: null
+    effective_until: null
+    effect: "A designated employer must prepare and implement an employment equity plan that will achieve reasonable progress towards employment equity in the employer's workforce, including numerical goals and a timetable."
+
+  ee_reporting:
+    ref: "EEA s21(1)"
+    value: "annual report required"
+    effective_from: null
+    effective_until: null
+    effect: "A designated employer must submit a report to the Director-General on progress made in implementing its employment equity plan, on an annual basis or as prescribed."
+
+  income_differentials:
+    ref: "EEA s27(1)"
+    value: "equal pay for work of equal value"
+    effective_from: null
+    effective_until: null
+    effect: "A designated employer must take measures to progressively reduce disproportionate income differentials. Differences in terms and conditions of employment of employees performing work of equal value that are directly or indirectly based on a listed ground constitute unfair discrimination."
+
+  sector_codes:
+    ref: "B-BBEE Act s9(1)"
+    value: "sector-specific BEE codes"
+    effective_from: null
+    effective_until: null
+    effect: "A sector charter or code issued under s9(1) of the Broad-Based Black Economic Empowerment Act 53 of 2003 establishes sector-specific targets for ownership, management control, skills development, enterprise development, and socio-economic development."
+    note: "BEE codes are issued under the Broad-Based Black Economic Empowerment Act 53 of 2003, not the EEA. They are included here because employment equity compliance and BEE scorecards are closely interrelated in practice."

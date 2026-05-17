@@ -1,0 +1,50 @@
+statute: "Sectoral Determinations under BCEA s55"
+authority: "Department of Employment and Labour"
+last_confirmed: "2025-03-01"
+source_url: "https://www.labour.gov.za/DocumentCenter/Pages/Legislation/Sectoral-Determinations.aspx"
+
+sections:
+  domestic_workers_minimum_wage:
+    ref: "SD 7 + National Minimum Wage Act 9 of 2018"
+    value: 27.58
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2024-03-01"
+    effective_until: null
+    effect: "Domestic workers are entitled to the national minimum wage of R27.58 per hour. The previous sectoral determination rate has been aligned with the National Minimum Wage Act."
+
+  farm_workers_minimum_wage:
+    ref: "SD 13 + National Minimum Wage Act 9 of 2018"
+    value: 27.58
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2024-03-01"
+    effective_until: null
+    effect: "Farm workers are entitled to the national minimum wage of R27.58 per hour. The previous sectoral determination rate has been aligned with the National Minimum Wage Act."
+
+  hospitality_sector:
+    ref: "SD 14"
+    value: 27.58
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2024-03-01"
+    effective_until: null
+    effect: "Employees in the hospitality sector are entitled to the national minimum wage of R27.58 per hour as prescribed by the applicable sectoral determination."
+
+  national_minimum_wage:
+    ref: "National Minimum Wage Act 9 of 2018"
+    value: 27.58
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2024-03-01"
+    effective_until: null
+    effect: "Every worker is entitled to a national minimum wage of not less than R27.58 per ordinary hour worked. The rate is reviewed annually by the National Minimum Wage Commission."
+
+  expanded_public_works_programme:
+    ref: "National Minimum Wage Act s6(6)"
+    value: 13.97
+    currency: ZAR
+    unit: "per hour"
+    effective_from: "2024-03-01"
+    effective_until: null
+    effect: "Workers employed in the Expanded Public Works Programme are entitled to a minimum wage of R13.97 per hour, which is a prescribed lower rate under s6(6) of the National Minimum Wage Act."
