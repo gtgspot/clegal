@@ -1,0 +1,50 @@
+statute: "Cybercrimes Act 19 of 2020"
+authority: "Department of Justice and Constitutional Development"
+last_confirmed: "2026-05-18"
+source_url: "https://www.gov.za/documents/acts/cybercrimes-act-19-2020"
+
+sections:
+  unlawful_access:
+    ref: "Cybercrimes Act s2"
+    value: true
+    effective_from: "2021-12-01"
+    effective_until: null
+    effect: "Any person who unlawfully and intentionally accesses or intercepts data, a computer program, a computer data storage medium, or a computer system is guilty of an offence."
+
+  unlawful_interception:
+    ref: "Cybercrimes Act s3"
+    value: true
+    effective_from: "2021-12-01"
+    effective_until: null
+    effect: "Any person who unlawfully and intentionally intercepts data, including within a computer system, is guilty of an offence."
+
+  unlawful_interference:
+    ref: "Cybercrimes Act s5"
+    value: true
+    effective_from: "2021-12-01"
+    effective_until: null
+    effect: "Any person who unlawfully and intentionally interferes with data or a computer program is guilty of an offence."
+
+  esp_fi_breach_reporting:
+    ref: "Cybercrimes Act s54"
+    value: "72 hours"
+    unit: "reporting deadline"
+    effective_from: null
+    effective_until: null
+    effect: "Electronic communications service providers and financial institutions must report to the South African Police Service within 72 hours of becoming aware that their systems have been involved in the commission of an offence under this Act."
+    note: "NOT YET IN FORCE — will commence on a date to be proclaimed by the President. When in force, creates a parallel reporting obligation alongside POPIA s22 notification to the Information Regulator."
+
+  penalties_serious:
+    ref: "Cybercrimes Act s18"
+    value: 15
+    unit: "years maximum imprisonment"
+    effective_from: "2021-12-01"
+    effective_until: null
+    effect: "Persons found guilty of cybercrime offences under this Act face fines and prison sentences of up to 15 years."
+
+  evidence_preservation:
+    ref: "Cybercrimes Act s41"
+    value: true
+    effective_from: "2021-12-01"
+    effective_until: null
+    effect: "A magistrate or judge may direct any person to preserve data that may be relevant to an investigation for a specified period."
