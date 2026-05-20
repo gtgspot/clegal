@@ -144,6 +144,7 @@ law-student/              # Socratic drilling, outlining, IRAC, bar prep, flashc
 legal-builder-hub/        # community skill discovery and install with a trust gate
 external_plugins/         # partner-built plugins maintained by their vendors
   cocounsel-legal/        # Thomson Reuters — Westlaw Deep Research via the CoCounsel Legal MCP
+  letra-da-lei/      # Letra da Lei — Brazilian legal corpus via the Letra da Lei MCP
 managed-agent-cookbooks/  # Claude Managed Agent cookbooks — one dir per scheduled agent
   diligence-grid/
   docket-watcher/
@@ -276,6 +277,7 @@ Plugins under [`external_plugins/`](./external_plugins) are built and maintained
 | Plugin | Built by | What it adds |
 |---|---|---|
 | **[cocounsel-legal](./external_plugins/cocounsel-legal)** | Thomson Reuters | Westlaw Deep Research with fully cited reports — caselaw, statutes, regulations, Practical Law, and secondary sources across up to three U.S. jurisdictions per run. Requires a CoCounsel Legal subscription with the MCP connector enabled. Support: cocounselsupport@tr.com. |
+| **[letra-da-lei](./external_plugins/letra-da-lei)** | Letra da Lei | The Brazilian legal platform — article-level search across statutes, codes, and regulations from official sources with verified source links. Free; no subscription required. Support: suporte@letradalei.com. |
 
 ## The trust layer for community legal skills
 
@@ -560,6 +562,12 @@ The full map across all plugins. The cold-start interview is the first thing to 
 | Command | Skill | What it does |
 |---|---|---|
 | `/cocounsel-legal:deep-research` | deep-research | Run Westlaw Deep Research — start, poll, and present a fully cited report |
+
+### letra-da-lei (Letra da Lei)
+
+| Command | Skill | What it does |
+|---|---|---|
+| `/letra-da-lei:pesquisa-legislacao` | pesquisa-legislacao | Search the Brazilian federal corpus and return verbatim article text with cited source links |
 
 ## Contributing
 

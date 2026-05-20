@@ -109,6 +109,14 @@
       "author": {
         "name": "Thomson Reuters"
       }
+    },
+    {
+      "name": "letra-da-lei",
+      "source": "./external_plugins/letra-da-lei",
+      "description": "The Brazilian legal platform — search and retrieve statutes, codes, and regulations with article-level citations and verified source links.",
+      "author": {
+        "name": "Letra da Lei"
+      }
     }
   ]
 }

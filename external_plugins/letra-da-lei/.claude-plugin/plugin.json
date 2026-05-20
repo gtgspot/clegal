@@ -1,0 +1,9 @@
+{
+  "name": "letra-da-lei",
+  "version": "0.1.0",
+  "description": "The Brazilian legal platform — search and retrieve statutes, codes, and regulations with article-level citations and verified source links.",
+  "author": {
+    "name": "Letra da Lei",
+    "email": "suporte@letradalei.com"
+  }
+}
