@@ -49,7 +49,7 @@ See the `.mcp.json` in each plugin directory for the authoritative list.
 
 These would make specific plugins significantly more useful. If you build or operate one, see "How to submit" above.
 
-- **IP management systems** (Anaqua, Clarivate IPfolio, AppColl, Patrix, Alt Legal, FoundationIP) — full docket sync for `ip-legal` portfolio tracking
+- **IP management systems** (Apiges Pro, Anaqua, Clarivate IPfolio, AppColl, Patrix, Alt Legal, FoundationIP) — full docket sync for `ip-legal` portfolio tracking
 - **USPTO by customer number** — full portfolio status and deadlines, not just per-application lookup
 - **USPTO TSDR / Trademark Status** — trademark status and deadlines for `ip-legal` brand management
 - **Jira / Linear / Asana for OSS requests** — `ip-legal` OSS clearance can monitor and respond to incoming tickets

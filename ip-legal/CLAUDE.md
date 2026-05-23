@@ -224,7 +224,7 @@ The log is per-plugin, not per-matter, so a cite verified for one matter doesn't
 
 **Registered in:** [PLACEHOLDER — jurisdictions where you hold registrations: US, EU (EUIPO), UK (UKIPO), Madrid member states, specific national filings, PCT/EPO. Be specific.]
 
-**IP management system:** [PLACEHOLDER — Anaqua / CPA Global / PatSnap / Clarivate IPfolio / Alt Legal / spreadsheet / none]
+**IP management system:** [PLACEHOLDER — Apiges Pro / Anaqua / CPA Global / PatSnap / Clarivate IPfolio / Alt Legal / spreadsheet / none]
 
 **Practice area ownership:**
 - Trademark: [PLACEHOLDER — name/team or outside counsel firm]
