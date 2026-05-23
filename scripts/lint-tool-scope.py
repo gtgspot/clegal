@@ -13,6 +13,8 @@ below — keeping write and external-channel access on the leaves, not the orche
      writer leaf gets Write.
   3. No Slack tool (`slack_send_message` or any `slack_*`) granted. Orchestrators
      emit `handoff_request` instead of calling Slack directly.
+  4. Subagent validation: Ensures subagent definitions within the orchestrator
+     config are not missing required 'handoff' routing (Enforcement of routing).
 
 Exits non-zero with a message naming the offending file + tool on any
 violation. Exits 0 and prints a one-line summary per cookbook on success.
@@ -33,7 +35,76 @@ def _lint_one(path: Path) -> list[str]:
     """Return a list of violation strings (empty if clean)."""
     errs: list[str] = []
     with path.open() as f:
-        doc = yaml.safe_load(f)
+        doc = yaml.safe_load(f) or {}
+    
+    tools = doc.get("tools", [])
+    subagents = doc.get("subagents", [])
+
+    # Feature: Ensure every subagent has a defined 'routing_strategy'
+    for sa in subagents:
+        if isinstance(sa, dict) and not sa.get("routing_strategy"):
+            errs.append(f"{path}: subagent '{sa.get('name')}' missing routing_strategy")
+
+    for idx, entry in enumerate(tools):
+        if not isinstance(entry, dict):
+            errs.append(f"{path}: tools[{idx}] is not a mapping")
+            continue
+        
+        ttype = entry.get("type", "")
+        if ttype == "mcp_toolset":
+            errs.append(
+                f"{path}: orchestrator must not carry mcp_toolset "
+                f"(mcp_server_name={entry.get('mcp_server_name', '<unnamed>')}); "
+                "move to the subagent leaf"
+            )
+            continue
+        
+        if not ttype.startswith("agent_toolset"):
+            continue
+
+        default_cfg = entry.get("default_config") or {}
+        default_enabled = bool(default_cfg.get("enabled", False))
+        
+        if default_enabled:
+            errs.append(f"{path}: orchestrator agent_toolset must have default_config.enabled=false")
+            continue
+
+        for cfg in (entry.get("configs") or []):
+            if not isinstance(cfg, dict): continue
+            name, enabled = cfg.get("name"), bool(cfg.get("enabled", False))
+            
+            if enabled and name == "write":
+                errs.append(f"{path}: orchestrator must not enable 'write'")
+            if enabled and isinstance(name, str) and name.startswith("slack"):
+                errs.append(f"{path}: orchestrator must not enable Slack tool '{name}'")
+                
+    return errs
+
+
+def main() -> int:
+    if not COOKBOOKS_DIR.is_dir():
+        print(f"no cookbooks dir at {COOKBOOKS_DIR}", file=sys.stderr)
+        return 2
+    
+    total_errs, clean = [], []
+    for agent_yaml in sorted(COOKBOOKS_DIR.glob("*/agent.yaml")):
+        file_errs = _lint_one(agent_yaml)
+        total_errs.extend(file_errs)
+        if not file_errs:
+            clean.append(agent_yaml.parent.name)
+            
+    if total_errs:
+        print("tool-scope lint FAILED:", file=sys.stderr)
+        for e in total_errs: print(f"  {e}", file=sys.stderr)
+        return 1
+        
+    for slug in clean:
+        print(f"  ✓ {slug:24s} orchestrator tool scope clean")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
     tools = doc.get("tools") or []
     for idx, entry in enumerate(tools):
         if not isinstance(entry, dict):
