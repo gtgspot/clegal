@@ -82,6 +82,7 @@ The legal research connectors in this plugin aren't just data sources — they'r
 Ships with connectors configured in `.mcp.json`:
 
 - **Solve Intelligence** — patent and non-patent literature search, SEP technical standards, prior art, claim analysis
+- **Patent Connector** - direct primary-source data from USPTO, EPO, DPMA, and USPTO TSDR (patent search, claims, full text, legal status, PTAB, prosecution history, trademark status)
 - **CourtListener** — U.S. court opinions, PACER dockets, citation verification
 - **Descrybe** — primary law research by concept or wording, citation treatment, quoted-language verification
 - **Slack** — search messages, read channels, find discussions

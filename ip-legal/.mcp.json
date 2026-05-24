@@ -6,6 +6,12 @@
       "title": "Solve Intelligence",
       "description": "Patent workflows — search patent and non-patent literature, legal texts, SEP technical standards, prior art, claim analysis."
     },
+    "Patent Connector": {
+      "type": "http",
+      "url": "https://patent.dev/mcp/sse",
+      "title": "Patent Connector",
+      "description": "Authoritative patent and trademark data from primary sources (USPTO, EPO, DPMA, USPTO TSDR). Search, claims, full text, legal status, PTAB, prosecution history, and trademark status."
+    },
     "CourtListener": {
       "type": "http",
       "url": "https://mcp.courtlistener.com/",
