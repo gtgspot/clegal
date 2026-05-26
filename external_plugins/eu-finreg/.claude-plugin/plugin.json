@@ -1,0 +1,9 @@
+{
+  "name": "eu-finreg",
+  "version": "0.1.0",
+  "description": "EU financial regulation specialist — banks, payment institutions, CASPs, investment firms, AIFMs, UCITS, insurers. Wraps the Velvoite corpus (mcp.velvoite.eu) covering EUR-Lex, EBA, ESMA, EIOPA, FIN-FSA, BaFin. Companion to regulatory-legal.",
+  "author": {
+    "name": "Silly Pilot Oy",
+    "url": "https://velvoite.eu"
+  }
+}

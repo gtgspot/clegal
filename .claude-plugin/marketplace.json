@@ -122,6 +122,16 @@
       "author": {
         "name": "Thomson Reuters"
       }
+    },
+    {
+      "name": "eu-finreg",
+      "displayName": "EU Financial Regulation",
+      "source": "./external_plugins/eu-finreg",
+      "description": "EU financial regulation specialist — companion to regulatory-legal for legal and compliance teams at EU-regulated financial institutions (payment institutions, CASPs, investment firms, AIFMs, e-money institutions, insurers, credit institutions). Wraps the Velvoite corpus (mcp.velvoite.eu) covering EUR-Lex, EBA, ESMA, EIOPA, FIN-FSA, BaFin. Requires a Velvoite API key (free 30-day Premium trial available at app.velvoite.eu).",
+      "author": {
+        "name": "Silly Pilot Oy",
+        "email": "matti@velvoite.eu"
+      }
     }
   ]
 }
