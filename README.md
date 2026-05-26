@@ -144,6 +144,7 @@ law-student/              # Socratic drilling, outlining, IRAC, bar prep, flashc
 legal-builder-hub/        # community skill discovery and install with a trust gate
 external_plugins/         # partner-built plugins maintained by their vendors
   cocounsel-legal/        # Thomson Reuters — Westlaw Deep Research via the CoCounsel Legal MCP
+  eu-finreg/              # Silly Pilot Oy — EU financial regulation (DORA, MiCA, PSD, AML, MiFID II, etc.) via the Velvoite MCP
 managed-agent-cookbooks/  # Claude Managed Agent cookbooks — one dir per scheduled agent
   diligence-grid/
   docket-watcher/
@@ -276,6 +277,7 @@ Plugins under [`external_plugins/`](./external_plugins) are built and maintained
 | Plugin | Built by | What it adds |
 |---|---|---|
 | **[cocounsel-legal](./external_plugins/cocounsel-legal)** | Thomson Reuters | Westlaw Deep Research with fully cited reports — caselaw, statutes, regulations, Practical Law, and secondary sources across up to three U.S. jurisdictions per run. Requires a CoCounsel Legal subscription with the MCP connector enabled. Support: cocounselsupport@tr.com. |
+| **[eu-finreg](./external_plugins/eu-finreg)** | Silly Pilot Oy | EU financial regulation specialist — companion to `regulatory-legal` for legal and compliance teams at EU-regulated financial institutions (payment institutions, CASPs, investment firms, AIFMs, e-money institutions, insurers, credit institutions). Surfaces canonical obligations (DORA, MiCA, PSD, AML/CFT, MiFID II, CRD/CRR, etc.), application-date deadlines, recent corpus changes, and entity-type-scoped enforcement decisions from EBA / ESMA / EIOPA / FIN-FSA / BaFin. Requires a Velvoite account (free 30-day Premium trial at app.velvoite.eu). Support: matti@velvoite.eu. |
 
 ## The trust layer for community legal skills
 
@@ -306,6 +308,7 @@ These plugins ship connectors for the systems legal teams live in. A connector g
 | **Slack** | Read channels, search, send messages and canvases | all plugins | Your workspace |
 | **Google Drive** | Read docs, sheets, slides; fetch by link | all plugins | Your account |
 | **CoCounsel Legal (Thomson Reuters)** | Westlaw Deep Research — cited reports across caselaw, statutes, regulations, Practical Law | `cocounsel-legal` | Customer subscription; OAuth |
+| **Velvoite (Silly Pilot)** | EU financial regulation corpus — obligations, deadlines, enforcement across EUR-Lex, EBA, ESMA, EIOPA, FIN-FSA, BaFin | `eu-finreg` | Customer subscription; free 30-day Premium trial; API key |
 | **Box** | Read files and folders in VDRs and matter rooms | `corporate-legal` | Your tenant |
 | **Ironclad** | Read the contract register, renewal dates, clauses | `commercial-legal` | Customer subscription |
 | **DocuSign / DocuSign CLM** | Envelope status, executed contracts, CLM metadata | `commercial-legal` | Customer subscription |
