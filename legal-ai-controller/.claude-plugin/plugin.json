@@ -1,0 +1,1 @@
+{\n  \"name\": \"legal-ai-controller\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Meta-controller that classifies legal tasks, selects analytical capabilities, dispatches to dual-AI adversarial evaluation, and synthesises a single authoritative legal output across 15 capabilities.\",\n  \"author\": {\n    \"name\": \"gtgspot\"\n  }\n}\n
