@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "dual-ai-eval": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["legal-ai-controller/mcp-server/dist/index.js"],
+      "title": "Legal AI Controller",
+      "description": "Dispatches legal queries to Claude and GPT simultaneously, runs 8-dimension adversarial matrix evaluation across 15 analytical capabilities, and synthesises a single authoritative output."
+    }
+  },
+  "recommendedCategories": [
+    "legal-analysis",
+    "adversarial-evaluation",
+    "meta-controller",
+    "ai-evaluation",
+    "legal-reasoning",
+    "capability-routing",
+    "dual-ai"
+  ]
+}
